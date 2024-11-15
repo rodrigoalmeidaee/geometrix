@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-var pieces = [36]piece.Piece{
+var pieces = []piece.Piece{
 	piece.New(piece.BlueStar, piece.YellowGreenTriangle, piece.Border, piece.RedYellowTriangle),
 	piece.New(piece.BlueStar, piece.PinkTrident, piece.BlueStar, piece.YellowGreenTriangle),
 	piece.New(piece.PinkTrident, piece.BlueStar, piece.YellowCircle, piece.Border),
@@ -102,29 +102,17 @@ func Profile(numAttempts int) {
 }
 
 func Solve() *piece.Board {
-	perm := rand.Perm(36)
-	shuffledPieces := [36]piece.Piece{}
+	perm := rand.Perm(len(pieces))
+	shuffledPieces := make([]piece.Piece, len(pieces))
 
 	for i, v := range perm {
 		shuffledPieces[v] = pieces[i]
 	}
 
-	pieceLookup := make(map[int][]*piece.PiecePlacement)
-	for _, p := range shuffledPieces {
-		for _, pp := range p.Rotations() {
-			for _, k := range pp.Keys() {
-				if _, ok := pieceLookup[k]; !ok {
-					pieceLookup[k] = make([]*piece.PiecePlacement, 0, 1)
-				}
-				pieceLookup[k] = append(pieceLookup[k], &pp)
-			}
-		}
-	}
-
-	board := piece.NewBoard(pieceLookup)
+	board := piece.NewBoard(shuffledPieces)
 
 	for {
-		if board.PlaceNext(pieceLookup) {
+		if board.PlaceNext() {
 			if board.IsSolved() {
 				return &board
 			}

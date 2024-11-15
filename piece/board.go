@@ -23,7 +23,7 @@ type Tile struct {
 }
 
 func (t *Tile) LookupKey() int {
-	return int(t.north_restriction) | int(t.east_restriction)<<8 | int(t.south_restriction)<<16 | int(t.west_restriction)<<24
+	return int(t.north_restriction) + int(t.east_restriction)*9 + int(t.south_restriction)*81 + int(t.west_restriction)*729
 }
 
 func (t *Tile) Dequeue() *PiecePlacement {
@@ -37,7 +37,7 @@ type Coordinate struct {
 	y int
 }
 
-var IterationOrder = [36]Coordinate{
+var IterationOrder = [BOARD_SIZE * BOARD_SIZE]Coordinate{
 	{x: 1, y: 1},
 	{x: 6, y: 1},
 	{x: 1, y: 6},
@@ -77,8 +77,9 @@ var IterationOrder = [36]Coordinate{
 }
 
 type Board struct {
-	tiles        [36]*Tile
+	tiles        [BOARD_SIZE * BOARD_SIZE]*Tile
 	currentPiece int
+	pieceLookup  [6561][]*PiecePlacement
 }
 
 func (b Board) String() string {
@@ -96,9 +97,28 @@ func (b Board) String() string {
 	return str + "  </table>\n</body>\n</html>"
 }
 
-func NewBoard(pieceLookup map[int][]*PiecePlacement) Board {
+func BuildLookup(pieces []Piece) [6561][]*PiecePlacement {
+	var (
+		pieceLookup [6561][]*PiecePlacement
+	)
+
+	for _, p := range pieces {
+		for _, pp := range p.Rotations() {
+			for _, k := range pp.Keys() {
+				if pieceLookup[k] == nil {
+					pieceLookup[k] = make([]*PiecePlacement, 0, 1)
+				}
+				pieceLookup[k] = append(pieceLookup[k], &pp)
+			}
+		}
+	}
+	return pieceLookup
+}
+
+func NewBoard(pieces []Piece) Board {
 	board := Board{}
 	board.currentPiece = 0
+	board.pieceLookup = BuildLookup(pieces)
 
 	// set up tiles and border restrictions
 	for x := 1; x <= BOARD_SIZE; x++ {
@@ -121,7 +141,7 @@ func NewBoard(pieceLookup map[int][]*PiecePlacement) Board {
 	}
 
 	board.currentPiece += 1
-	for _, pp := range pieceLookup[board.tiles[0].LookupKey()] {
+	for _, pp := range board.pieceLookup[board.tiles[0].LookupKey()] {
 		if pp.piece.sticky {
 			board.Place(pp, Coordinate{x: 1, y: 1})
 			break
@@ -135,7 +155,7 @@ func (b *Board) IsSolved() bool {
 	return b.currentPiece == BOARD_SIZE*BOARD_SIZE
 }
 
-func (b *Board) PlaceNext(pieceLookup map[int][]*PiecePlacement) bool {
+func (b *Board) PlaceNext() bool {
 	// get coordinate of next tile
 	coord := IterationOrder[b.currentPiece]
 	idx := coord.AsIndex()
@@ -143,7 +163,7 @@ func (b *Board) PlaceNext(pieceLookup map[int][]*PiecePlacement) bool {
 	backtracking_queue := make([]*PiecePlacement, 0, 1)
 
 	// get matching pieces
-	matchingPieces := pieceLookup[tile.LookupKey()]
+	matchingPieces := b.pieceLookup[tile.LookupKey()]
 	if LOG_LEVEL <= INFO {
 		ordIndicator := "th"
 		if (b.currentPiece+1)%10 == 1 {
@@ -270,5 +290,5 @@ func (b *Board) Backtrack() bool {
 }
 
 func (xy Coordinate) AsIndex() int {
-	return (xy.y-1)*6 + xy.x - 1
+	return (xy.y-1)*BOARD_SIZE + xy.x - 1
 }

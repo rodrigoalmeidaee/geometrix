@@ -11,23 +11,23 @@ const (
 
 	Border = 2
 
-	Purple     = 4
-	PinkCircle = 4
+	Purple     = 3
+	PinkCircle = 3
 
-	Yellow      = 8
-	PinkTrident = 8
+	Yellow      = 4
+	PinkTrident = 4
 
-	White        = 16
-	YellowCircle = 16
+	White        = 5
+	YellowCircle = 5
 
-	Pink              = 32
-	RedYellowTriangle = 32
+	Pink              = 6
+	RedYellowTriangle = 6
 
-	Green               = 64
-	YellowGreenTriangle = 64
+	Green               = 7
+	YellowGreenTriangle = 7
 
-	Red        = 128
-	RedTrident = 128
+	Red        = 8
+	RedTrident = 8
 )
 
 const (
@@ -137,29 +137,24 @@ func (p Piece) Rotations() [4]PiecePlacement {
 	}
 }
 
-func (pp PiecePlacement) Keys() [16]int {
+func (pp PiecePlacement) Keys() [11]int {
 
 	var N = int(pp.north)
-	var E = int(pp.east) << 8
-	var S = int(pp.south) << 16
-	var W = int(pp.west) << 24
+	var E = int(pp.east) * 9
+	var S = int(pp.south) * 81
+	var W = int(pp.west) * 729
 
-	return [16]int{
-		N | E | S | W,
-		E | S | W,
-		N | S | W,
-		N | E | W,
-		N | E | S,
-		N | E,
-		N | S,
-		N | W,
-		E | S,
-		E | W,
-		S | W,
-		N,
-		E,
-		S,
-		W,
-		0,
+	return [11]int{
+		N + E + S + W,
+		E + S + W,
+		N + S + W,
+		N + E + W,
+		N + E + S,
+		N + E,
+		N + S,
+		N + W,
+		E + S,
+		E + W,
+		S + W,
 	}
 }
