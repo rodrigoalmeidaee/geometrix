@@ -78,12 +78,14 @@ func (f Face) String() string {
 }
 
 type Piece struct {
-	number int
-	placed bool
-	north  Pattern
-	east   Pattern
-	south  Pattern
-	west   Pattern
+	number      int
+	placed      bool
+	north       Pattern
+	east        Pattern
+	south       Pattern
+	west        Pattern
+	Lookups     map[int]*PiecePlacementLookup
+	LookupsList []*PiecePlacementLookup
 }
 
 type PiecePlacement struct {
@@ -97,8 +99,12 @@ type PiecePlacement struct {
 
 var nextPieceNumber int = 1
 
+func ResetPieceNumber() {
+	nextPieceNumber = 1
+}
+
 func New(north Pattern, east Pattern, south Pattern, west Pattern) Piece {
-	piece := Piece{north: north, east: east, south: south, west: west, number: nextPieceNumber, placed: false}
+	piece := Piece{north: north, east: east, south: south, west: west, number: nextPieceNumber, placed: false, Lookups: make(map[int]*PiecePlacementLookup), LookupsList: make([]*PiecePlacementLookup, 0, 16)}
 	nextPieceNumber += 1
 	return piece
 }
@@ -116,14 +122,14 @@ func (p Piece) Rotations() [4]PiecePlacement {
 	}
 }
 
-func (pp PiecePlacement) Keys() [16]int {
+func (pp PiecePlacement) Keys() [11]int {
 
 	var N = int(pp.north)
 	var E = int(pp.east) << 8
 	var S = int(pp.south) << 16
 	var W = int(pp.west) << 24
 
-	return [16]int{
+	return [11]int{
 		N | E | S | W,
 		E | S | W,
 		N | S | W,
@@ -135,10 +141,55 @@ func (pp PiecePlacement) Keys() [16]int {
 		E | S,
 		E | W,
 		S | W,
-		N,
-		E,
-		S,
-		W,
-		0,
 	}
+}
+
+type PiecePlacementLookup struct {
+	pieces           []*PiecePlacement
+	count            int
+	pieceRepetitions [37]int
+}
+
+func NewPiecePlacementLookup() *PiecePlacementLookup {
+	return &PiecePlacementLookup{pieces: make([]*PiecePlacement, 0, 1), count: 0}
+}
+
+func (ppl *PiecePlacementLookup) Add(pp *PiecePlacement) {
+	ppl.pieces = append(ppl.pieces, pp)
+	ppl.pieceRepetitions[pp.piece.number] += 1
+	ppl.count += 1
+}
+
+func (pp *PiecePlacement) MarkUsed() {
+	pp.piece.placed = true
+	for _, lookup := range pp.piece.LookupsList {
+		lookup.MarkUsed(pp)
+	}
+}
+
+func (ppl *PiecePlacementLookup) MarkUsed(pp *PiecePlacement) {
+	ppl.count -= ppl.pieceRepetitions[pp.piece.number]
+}
+
+func (pp *PiecePlacement) MarkUnused() {
+	pp.piece.placed = false
+	for _, lookup := range pp.piece.LookupsList {
+		lookup.MarkUnused(pp)
+	}
+}
+
+func (ppl *PiecePlacementLookup) MarkUnused(pp *PiecePlacement) {
+	ppl.count += ppl.pieceRepetitions[pp.piece.number]
+}
+
+func (ppl *PiecePlacementLookup) GetPieces() []*PiecePlacement {
+	pieces := make([]*PiecePlacement, ppl.count)
+	appended := 0
+	for _, pp := range ppl.pieces {
+		if !pp.piece.placed {
+			pieces[appended] = pp
+			appended += 1
+		}
+	}
+	return pieces
 }
