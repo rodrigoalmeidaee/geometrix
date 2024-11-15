@@ -86,6 +86,7 @@ type Piece struct {
 	west        Pattern
 	Lookups     map[int]*PiecePlacementLookup
 	LookupsList []*PiecePlacementLookup
+	sticky      bool
 }
 
 type PiecePlacement struct {
@@ -99,14 +100,35 @@ type PiecePlacement struct {
 }
 
 var nextPieceNumber int = 1
+var cornersFound int = 0
 
 func ResetPieceNumber() {
 	nextPieceNumber = 1
+	cornersFound = 0
 }
 
 func New(north Pattern, east Pattern, south Pattern, west Pattern) Piece {
 	piece := Piece{north: north, east: east, south: south, west: west, number: nextPieceNumber, placed: false, Lookups: make(map[int]*PiecePlacementLookup), LookupsList: make([]*PiecePlacementLookup, 0, 16)}
 	nextPieceNumber += 1
+	borders := 0
+	if north == Border {
+		borders += 1
+	}
+	if east == Border {
+		borders += 1
+	}
+	if south == Border {
+		borders += 1
+	}
+	if west == Border {
+		borders += 1
+	}
+	if borders == 2 {
+		if cornersFound == 0 {
+			piece.sticky = true
+		}
+		cornersFound += 1
+	}
 	return piece
 }
 

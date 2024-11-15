@@ -88,7 +88,12 @@ func NewBoard(pieces []Piece) Board {
 	}
 
 	board.currentPiece += 1
-	board.Place(board.pieceLookup[board.tiles[0].LookupKey()].GetPieces()[0], Coordinate{x: 1, y: 1})
+	for _, pp := range board.pieceLookup[board.tiles[0].LookupKey()].GetPieces() {
+		if pp.piece.sticky {
+			board.Place(pp, Coordinate{x: 1, y: 1})
+			break
+		}
+	}
 
 	return board
 }
