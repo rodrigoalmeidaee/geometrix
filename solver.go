@@ -103,16 +103,15 @@ func Solve() *piece.Board {
 		shuffledPieces[v] = pieces[i]
 	}
 
-	pieceLookup := piece.BuildLookup(shuffledPieces)
-	board := piece.NewBoard(pieceLookup)
+	board := piece.NewBoard(shuffledPieces)
 
 	for {
-		if board.PlaceNext(pieceLookup) {
+		if board.PlaceNext() {
 			if board.IsSolved() {
 				return &board
 			}
 		} else {
-			if !board.Backtrack(pieceLookup) {
+			if !board.Backtrack() {
 				return nil
 			}
 		}
