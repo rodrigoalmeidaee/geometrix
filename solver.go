@@ -56,14 +56,16 @@ func GetPieces() []piece.Piece {
 
 func main() {
 	var (
-		mode string
+		mode          string
+		sortAlgorithm string
 	)
 
 	flag.StringVar(&mode, "mode", "solve", "Mode to run the program in")
+	flag.StringVar(&sortAlgorithm, "sort", "none", "Sort algorithm to use")
 	flag.Parse()
 
 	if mode == "solve" {
-		board := Solve()
+		board := Solve(sortAlgorithm)
 		if board != nil {
 			fmt.Fprintf(os.Stderr, "Solved in %d movements!\n", piece.MovementCount)
 			fmt.Printf("%s", *board)
@@ -71,11 +73,11 @@ func main() {
 			fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
 		}
 	} else if mode == "profile" {
-		Profile(10000)
+		Profile(10000, sortAlgorithm)
 	}
 }
 
-func Profile(numAttempts int) {
+func Profile(numAttempts int, sortAlgorithm string) {
 	movementCounts := make([]int, numAttempts)
 	timings := make([]float64, numAttempts)
 	solutions := make(map[string]int)
@@ -83,7 +85,7 @@ func Profile(numAttempts int) {
 	for i := 0; i < numAttempts; i++ {
 		start := time.Now()
 		piece.MovementCount = 0
-		board := Solve()
+		board := Solve(sortAlgorithm)
 		if board == nil {
 			fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
 			return
@@ -106,14 +108,30 @@ func Profile(numAttempts int) {
 	}
 }
 
-func Solve() *piece.Board {
+func Solve(sortAlgorithm string) *piece.Board {
 	pieces := GetPieces()
+	pieceStats := piece.GetPieceStats(pieces)
 	perm := rand.Perm(len(pieces))
 	shuffledPieces := make([]piece.Piece, len(pieces))
 
 	for i, v := range perm {
 		shuffledPieces[v] = pieces[i]
 	}
+
+	SortKey := func(p piece.Piece) int {
+		if sortAlgorithm == "rarest-face" {
+			return piece.GetPieceRarity(pieceStats, p, "face", "min")
+		} else if sortAlgorithm == "rarest-corner" {
+			return piece.GetPieceRarity(pieceStats, p, "corner", "min")
+		} else if sortAlgorithm == "common-corner" {
+			return -piece.GetPieceRarity(pieceStats, p, "corner", "min")
+		}
+		return 0
+	}
+
+	slices.SortStableFunc(shuffledPieces, func(a, b piece.Piece) int {
+		return SortKey(a) - SortKey(b)
+	})
 
 	board := piece.NewBoard(shuffledPieces)
 

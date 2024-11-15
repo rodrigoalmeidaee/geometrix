@@ -1,6 +1,9 @@
 package piece
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 type Pattern uint8
 type Face uint8
@@ -170,6 +173,68 @@ func (pp PiecePlacement) Keys() [11]int {
 		E + S,
 		E + W,
 		S + W,
+	}
+}
+
+func GetPieceStats(pieces []Piece) map[int]int {
+	pieceStats := make(map[int]int)
+
+	// Statistics for single faces
+	for _, p := range pieces {
+		pieceStats[int(p.north)] += 1
+		pieceStats[int(p.east)] += 1
+		pieceStats[int(p.south)] += 1
+		pieceStats[int(p.west)] += 1
+	}
+
+	// Statistics for corners
+	for _, p := range pieces {
+		pieceStats[int(p.north)+9*int(p.east)] += 1
+		pieceStats[int(p.east)+9*int(p.south)] += 1
+		pieceStats[int(p.south)+9*int(p.west)] += 1
+		pieceStats[int(p.west)+9*int(p.north)] += 1
+	}
+
+	// Statistics for U shapes
+	for _, p := range pieces {
+		pieceStats[int(p.north)+9*int(p.east)+81*int(p.south)] += 1
+		pieceStats[int(p.east)+9*int(p.south)+81*int(p.west)] += 1
+		pieceStats[int(p.south)+9*int(p.west)+81*int(p.north)] += 1
+		pieceStats[int(p.west)+9*int(p.north)+81*int(p.east)] += 1
+	}
+
+	return pieceStats
+}
+
+func GetPieceRarity(pieceStats map[int]int, piece Piece, facet string, aggregateMode string) int {
+	var rarities []int = make([]int, 4)
+
+	if facet == "face" {
+		// Statistics for single faces
+		rarities[0] = pieceStats[int(piece.north)]
+		rarities[1] = pieceStats[int(piece.east)]
+		rarities[2] = pieceStats[int(piece.south)]
+		rarities[3] = pieceStats[int(piece.west)]
+	} else if facet == "corner" {
+		rarities[0] = pieceStats[int(piece.north)+9*int(piece.east)]
+		rarities[1] = pieceStats[int(piece.east)+9*int(piece.south)]
+		rarities[2] = pieceStats[int(piece.south)+9*int(piece.west)]
+		rarities[3] = pieceStats[int(piece.west)+9*int(piece.north)]
+	} else if facet == "u" {
+		rarities[0] = pieceStats[int(piece.north)+9*int(piece.east)+81*int(piece.south)]
+		rarities[1] = pieceStats[int(piece.east)+9*int(piece.south)+81*int(piece.west)]
+		rarities[2] = pieceStats[int(piece.south)+9*int(piece.west)+81*int(piece.north)]
+		rarities[3] = pieceStats[int(piece.west)+9*int(piece.north)+81*int(piece.east)]
+	} else {
+		panic(facet)
+	}
+
+	if aggregateMode == "min" {
+		return slices.Min(rarities)
+	} else if aggregateMode == "avg" {
+		return (rarities[0] + rarities[1] + rarities[2] + rarities[3]) / 4
+	} else {
+		panic(aggregateMode)
 	}
 }
 
