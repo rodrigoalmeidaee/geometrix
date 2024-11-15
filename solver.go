@@ -10,10 +10,10 @@ import (
 	"time"
 )
 
-func GetPieces() [36]piece.Piece {
+func GetPieces() []piece.Piece {
 	piece.ResetPieceNumber()
 
-	var pieces = [36]piece.Piece{
+	var pieces = []piece.Piece{
 		piece.New(piece.BlueStar, piece.YellowGreenTriangle, piece.Border, piece.RedYellowTriangle),
 		piece.New(piece.BlueStar, piece.PinkTrident, piece.BlueStar, piece.YellowGreenTriangle),
 		piece.New(piece.PinkTrident, piece.BlueStar, piece.YellowCircle, piece.Border),
@@ -96,8 +96,8 @@ func Profile(numAttempts int) {
 
 func Solve() *piece.Board {
 	pieces := GetPieces()
-	perm := rand.Perm(36)
-	shuffledPieces := [36]piece.Piece{}
+	perm := rand.Perm(len(pieces))
+	shuffledPieces := make([]piece.Piece, len(pieces))
 
 	for i, v := range perm {
 		shuffledPieces[v] = pieces[i]

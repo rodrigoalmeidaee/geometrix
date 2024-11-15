@@ -37,12 +37,12 @@ type Coordinate struct {
 	y int
 }
 
-var IterationOrder = [36]Coordinate{
+var IterationOrder = [BOARD_SIZE * BOARD_SIZE]Coordinate{
 	{x: 1, y: 1},
 }
 
 type Board struct {
-	tiles        [36]*Tile
+	tiles        [BOARD_SIZE * BOARD_SIZE]*Tile
 	currentPiece int
 	pieceLookup  [6561]*PiecePlacementLookup
 }
@@ -62,7 +62,7 @@ func (b Board) String() string {
 	return str + "  </table>\n</body>\n</html>"
 }
 
-func NewBoard(pieces [36]Piece) Board {
+func NewBoard(pieces []Piece) Board {
 	board := Board{}
 	board.currentPiece = 0
 	board.pieceLookup = BuildLookup(pieces)
@@ -97,7 +97,7 @@ func (b *Board) IsSolved() bool {
 	return b.currentPiece == BOARD_SIZE*BOARD_SIZE
 }
 
-func BuildLookup(pieces [36]Piece) [6561]*PiecePlacementLookup {
+func BuildLookup(pieces []Piece) [6561]*PiecePlacementLookup {
 	pieceLookup := [6561]*PiecePlacementLookup{}
 	for _, p := range pieces {
 		for _, pp := range p.Rotations() {
@@ -155,7 +155,7 @@ func (b *Board) GetNextCoordinate() Coordinate {
 		}
 	}
 
-	IterationOrder[b.currentPiece] = Coordinate{x: minTile%6 + 1, y: minTile/6 + 1}
+	IterationOrder[b.currentPiece] = Coordinate{x: minTile%BOARD_SIZE + 1, y: minTile/BOARD_SIZE + 1}
 	return IterationOrder[b.currentPiece]
 }
 
@@ -287,5 +287,5 @@ func (b *Board) Backtrack() bool {
 }
 
 func (xy Coordinate) AsIndex() int {
-	return (xy.y-1)*6 + xy.x - 1
+	return (xy.y-1)*BOARD_SIZE + xy.x - 1
 }
