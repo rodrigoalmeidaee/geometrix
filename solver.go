@@ -8,8 +8,6 @@ import (
 	"rsalmeidafl/geometrix/piece"
 	"slices"
 	"time"
-
-	"github.com/emirpasic/gods/lists/arraylist"
 )
 
 var pieces = [36]piece.Piece{
@@ -50,8 +48,6 @@ var pieces = [36]piece.Piece{
 	piece.New(piece.BlueStar, piece.PinkTrident, piece.BlueStar, piece.YellowGreenTriangle),
 	piece.New(piece.RedYellowTriangle, piece.YellowCircle, piece.BlueStar, piece.YellowGreenTriangle),
 }
-
-var pieceLookup map[int]*arraylist.List
 
 func main() {
 	var (
@@ -98,14 +94,14 @@ func Solve() *piece.Board {
 		shuffledPieces[v] = pieces[i]
 	}
 
-	pieceLookup = make(map[int]*arraylist.List)
+	pieceLookup := make(map[int][]*piece.PiecePlacement)
 	for _, p := range shuffledPieces {
 		for _, pp := range p.Rotations() {
 			for _, k := range pp.Keys() {
 				if _, ok := pieceLookup[k]; !ok {
-					pieceLookup[k] = arraylist.New()
+					pieceLookup[k] = make([]*piece.PiecePlacement, 0, 1)
 				}
-				pieceLookup[k].Add(&pp)
+				pieceLookup[k] = append(pieceLookup[k], &pp)
 			}
 		}
 	}

@@ -2,9 +2,6 @@ package piece
 
 import (
 	"fmt"
-
-	"github.com/emirpasic/gods/lists/arraylist"
-	"github.com/emirpasic/gods/queues/arrayqueue"
 )
 
 const BOARD_SIZE = 6
@@ -17,7 +14,7 @@ const LOG_LEVEL = 2
 var MovementCount = 0
 
 type Tile struct {
-	backtracking_queue *arrayqueue.Queue
+	backtracking_queue []*PiecePlacement
 	placed_piece       *PiecePlacement
 	north_restriction  Pattern
 	east_restriction   Pattern
@@ -27,6 +24,12 @@ type Tile struct {
 
 func (t *Tile) LookupKey() int {
 	return int(t.north_restriction) | int(t.east_restriction)<<8 | int(t.south_restriction)<<16 | int(t.west_restriction)<<24
+}
+
+func (t *Tile) Dequeue() *PiecePlacement {
+	result := t.backtracking_queue[0]
+	t.backtracking_queue = t.backtracking_queue[1:]
+	return result
 }
 
 type Coordinate struct {
@@ -124,12 +127,12 @@ func (b *Board) IsSolved() bool {
 	return b.currentPiece == BOARD_SIZE*BOARD_SIZE
 }
 
-func (b *Board) PlaceNext(pieceLookup map[int]*arraylist.List) bool {
+func (b *Board) PlaceNext(pieceLookup map[int][]*PiecePlacement) bool {
 	// get coordinate of next tile
 	coord := IterationOrder[b.currentPiece]
 	idx := coord.AsIndex()
 	tile := b.tiles[idx]
-	backtracking_queue := arrayqueue.New()
+	backtracking_queue := make([]*PiecePlacement, 0, 1)
 
 	// get matching pieces
 	matchingPieces := pieceLookup[tile.LookupKey()]
@@ -145,21 +148,18 @@ func (b *Board) PlaceNext(pieceLookup map[int]*arraylist.List) bool {
 		fmt.Printf("Will attempt to place %d%s piece at %d, %d\n", b.currentPiece+1, ordIndicator, coord.x, coord.y)
 	}
 
-	if matchingPieces != nil {
-		for i := 0; i < matchingPieces.Size(); i++ {
-			el, _ := matchingPieces.Get(i)
-			piecePlacement := el.(*PiecePlacement)
-			if !piecePlacement.piece.placed {
-				backtracking_queue.Enqueue(piecePlacement)
-			}
+	for _, pp := range matchingPieces {
+		if !pp.piece.placed {
+			backtracking_queue = append(backtracking_queue, pp)
 		}
 	}
+
 	if LOG_LEVEL <= DEBUG {
 		fmt.Printf("  Restrictions for this tile: N=%s E=%s S=%s W=%s\n", tile.north_restriction, tile.east_restriction, tile.south_restriction, tile.west_restriction)
-		fmt.Printf("  Matching piece placements: %d\n", backtracking_queue.Size())
+		fmt.Printf("  Matching piece placements: %d\n", len(backtracking_queue))
 	}
 
-	if backtracking_queue.Empty() {
+	if len(backtracking_queue) == 0 {
 		if LOG_LEVEL <= INFO {
 			fmt.Printf("  None of the remaining pieces is a match, backtracking\n")
 		}
@@ -168,8 +168,7 @@ func (b *Board) PlaceNext(pieceLookup map[int]*arraylist.List) bool {
 
 	b.currentPiece += 1
 	tile.backtracking_queue = backtracking_queue
-	_nextCandidate, _ := backtracking_queue.Dequeue()
-	nextCandidate := _nextCandidate.(*PiecePlacement)
+	nextCandidate := tile.Dequeue()
 
 	if LOG_LEVEL <= INFO {
 		fmt.Printf("  Placing piece %d facing %s (%s, %s, %s, %s)\n", nextCandidate.piece.number, nextCandidate.orientation, nextCandidate.north, nextCandidate.east, nextCandidate.south, nextCandidate.west)
@@ -241,7 +240,7 @@ func (b *Board) Backtrack() bool {
 	// check the next piece in the backtracking queue
 	tile := b.tiles[currentCoordinate.AsIndex()]
 
-	if tile.backtracking_queue.Empty() {
+	if len(tile.backtracking_queue) == 0 {
 		if LOG_LEVEL <= DEBUG {
 			fmt.Printf("  Backtracking further as there are no more candidates for %d, %d\n", currentCoordinate.x, currentCoordinate.y)
 		}
@@ -254,8 +253,7 @@ func (b *Board) Backtrack() bool {
 		}
 	}
 
-	_nextCandidate, _ := tile.backtracking_queue.Dequeue()
-	nextCandidate := _nextCandidate.(*PiecePlacement)
+	nextCandidate := tile.Dequeue()
 	if LOG_LEVEL <= INFO {
 		fmt.Printf("  Placing piece %d facing %s\n", nextCandidate.piece.number, nextCandidate.orientation)
 	}
