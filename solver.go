@@ -71,7 +71,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
 		}
 	} else if mode == "profile" {
-		Profile(1000)
+		Profile(10000)
 	}
 }
 

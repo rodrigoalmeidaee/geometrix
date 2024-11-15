@@ -95,6 +95,7 @@ type PiecePlacement struct {
 	east        Pattern
 	south       Pattern
 	west        Pattern
+	fingerprint int
 }
 
 var nextPieceNumber int = 1
@@ -114,12 +115,18 @@ func (p Piece) String() string {
 }
 
 func (p Piece) Rotations() [4]PiecePlacement {
-	return [4]PiecePlacement{
-		{&p, North, p.north, p.east, p.south, p.west},
-		{&p, East, p.east, p.south, p.west, p.north},
-		{&p, South, p.south, p.west, p.north, p.east},
-		{&p, West, p.west, p.north, p.east, p.south},
+	placements := [4]PiecePlacement{
+		{&p, North, p.north, p.east, p.south, p.west, 0},
+		{&p, East, p.east, p.south, p.west, p.north, 0},
+		{&p, South, p.south, p.west, p.north, p.east, 0},
+		{&p, West, p.west, p.north, p.east, p.south, 0},
 	}
+
+	for i := 0; i < 4; i++ {
+		placements[i].fingerprint = placements[i].Keys()[0]
+	}
+
+	return placements
 }
 
 func (pp PiecePlacement) Keys() [11]int {
@@ -184,12 +191,14 @@ func (ppl *PiecePlacementLookup) MarkUnused(pp *PiecePlacement) {
 
 func (ppl *PiecePlacementLookup) GetPieces() []*PiecePlacement {
 	pieces := make([]*PiecePlacement, ppl.count)
+	piecesSeen := make(map[int]bool, ppl.count)
 	appended := 0
 	for _, pp := range ppl.pieces {
-		if !pp.piece.placed {
+		if !pp.piece.placed && !piecesSeen[pp.fingerprint] {
 			pieces[appended] = pp
+			piecesSeen[pp.fingerprint] = true
 			appended += 1
 		}
 	}
-	return pieces
+	return pieces[:appended]
 }
