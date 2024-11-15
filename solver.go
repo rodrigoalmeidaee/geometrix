@@ -1,10 +1,13 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"math/rand"
 	"os"
 	"rsalmeidafl/geometrix/piece"
+	"slices"
+	"time"
 
 	"github.com/emirpasic/gods/lists/arraylist"
 )
@@ -51,6 +54,43 @@ var pieces = [36]piece.Piece{
 var pieceLookup map[int]*arraylist.List
 
 func main() {
+	var (
+		mode string
+	)
+
+	flag.StringVar(&mode, "mode", "solve", "Mode to run the program in")
+	flag.Parse()
+
+	if mode == "solve" {
+		board := Solve()
+		if board != nil {
+			fmt.Fprintf(os.Stderr, "Solved in %d movements!\n", piece.MovementCount)
+			fmt.Printf("%s", *board)
+		} else {
+			fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
+		}
+	} else if mode == "profile" {
+		Profile(1000)
+	}
+}
+
+func Profile(numAttempts int) {
+	movementCounts := make([]int, numAttempts)
+	timings := make([]float64, numAttempts)
+
+	for i := 0; i < numAttempts; i++ {
+		start := time.Now()
+		piece.MovementCount = 0
+		Solve()
+		movementCounts[i] = piece.MovementCount
+		timings[i] = float64(time.Since(start).Microseconds()) / 1000.0
+	}
+
+	fmt.Printf("Movements: min=%d, max=%d, avg=%d\n", slices.Min(movementCounts), slices.Max(movementCounts), Avg(movementCounts))
+	fmt.Printf("Timings: min=%.2f, max=%.2f, avg=%.2f\n", slices.Min(timings), slices.Max(timings), FloatAvg(timings))
+}
+
+func Solve() *piece.Board {
 	perm := rand.Perm(36)
 	shuffledPieces := [36]piece.Piece{}
 
@@ -75,17 +115,28 @@ func main() {
 	for {
 		if board.PlaceNext(pieceLookup) {
 			if board.IsSolved() {
-				fmt.Fprintf(os.Stderr, "Solved in %d movements!\n", piece.MovementCount)
-				fmt.Printf("%s", board)
-				break
+				return &board
 			}
 		} else {
-			if board.Backtrack() {
-				continue
-			} else {
-				fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
-				break
+			if !board.Backtrack() {
+				return nil
 			}
 		}
 	}
+}
+
+func Avg(nums []int) int {
+	sum := 0
+	for _, n := range nums {
+		sum += n
+	}
+	return sum / len(nums)
+}
+
+func FloatAvg(nums []float64) float64 {
+	sum := float64(0)
+	for _, n := range nums {
+		sum += n
+	}
+	return sum / float64(len(nums))
 }
