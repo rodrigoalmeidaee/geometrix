@@ -1,0 +1,8 @@
+img.img {
+    width: 228px;
+    height: 228px;
+}
+
+.img-W { transform: rotate(90deg); }
+.img-S { transform: rotate(180deg); }
+.img-E { transform: rotate(270deg); }
