@@ -80,6 +80,7 @@ func (f Face) String() string {
 type Piece struct {
 	number int
 	placed bool
+	sticky bool
 	north  Pattern
 	east   Pattern
 	south  Pattern
@@ -96,9 +97,29 @@ type PiecePlacement struct {
 }
 
 var nextPieceNumber int = 1
+var firstCorner bool = true
 
 func New(north Pattern, east Pattern, south Pattern, west Pattern) Piece {
 	piece := Piece{north: north, east: east, south: south, west: west, number: nextPieceNumber, placed: false}
+	borders := 0
+	if north == Border {
+		borders += 1
+	}
+	if east == Border {
+		borders += 1
+	}
+	if south == Border {
+		borders += 1
+	}
+	if west == Border {
+		borders += 1
+	}
+
+	if firstCorner && borders == 2 {
+		piece.sticky = true
+		firstCorner = false
+	}
+
 	nextPieceNumber += 1
 	return piece
 }

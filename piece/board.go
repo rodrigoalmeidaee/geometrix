@@ -39,21 +39,21 @@ type Coordinate struct {
 
 var IterationOrder = [36]Coordinate{
 	{x: 1, y: 1},
+	{x: 6, y: 1},
+	{x: 1, y: 6},
+	{x: 6, y: 6},
 	{x: 2, y: 1},
 	{x: 3, y: 1},
 	{x: 4, y: 1},
 	{x: 5, y: 1},
-	{x: 6, y: 1},
 	{x: 1, y: 2},
 	{x: 1, y: 3},
 	{x: 1, y: 4},
 	{x: 1, y: 5},
-	{x: 1, y: 6},
 	{x: 6, y: 2},
 	{x: 6, y: 3},
 	{x: 6, y: 4},
 	{x: 6, y: 5},
-	{x: 6, y: 6},
 	{x: 2, y: 6},
 	{x: 5, y: 6},
 	{x: 3, y: 6},
@@ -82,7 +82,7 @@ type Board struct {
 }
 
 func (b Board) String() string {
-	str := "<!doctype html>\n<html>\n<head>  <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" >\n</head>\n<body>\n  <table class=\"board\">\n"
+	str := "<!doctype html>\n<html>\n<head>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" >\n</head>\n<body>\n  <table class=\"board\" cellpadding=\"0\" cellspacing=\"0\">\n"
 	idx := 0
 	for y := 1; y <= BOARD_SIZE; y++ {
 		str += "    <tr>\n"
@@ -96,7 +96,7 @@ func (b Board) String() string {
 	return str + "  </table>\n</body>\n</html>"
 }
 
-func NewBoard() Board {
+func NewBoard(pieceLookup map[int][]*PiecePlacement) Board {
 	board := Board{}
 	board.currentPiece = 0
 
@@ -117,6 +117,14 @@ func NewBoard() Board {
 			if y == BOARD_SIZE {
 				board.tiles[idx].south_restriction = Border
 			}
+		}
+	}
+
+	board.currentPiece += 1
+	for _, pp := range pieceLookup[board.tiles[0].LookupKey()] {
+		if pp.piece.sticky {
+			board.Place(pp, Coordinate{x: 1, y: 1})
+			break
 		}
 	}
 

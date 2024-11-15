@@ -73,17 +73,32 @@ func main() {
 func Profile(numAttempts int) {
 	movementCounts := make([]int, numAttempts)
 	timings := make([]float64, numAttempts)
+	solutions := make(map[string]int)
 
 	for i := 0; i < numAttempts; i++ {
 		start := time.Now()
 		piece.MovementCount = 0
-		Solve()
+		board := Solve()
+		if board == nil {
+			fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
+			return
+		}
 		movementCounts[i] = piece.MovementCount
 		timings[i] = float64(time.Since(start).Microseconds()) / 1000.0
+		if solutions[board.String()] == 0 {
+			solutions[board.String()] = len(solutions) + 1
+		}
 	}
 
 	fmt.Printf("Movements: min=%d, max=%d, avg=%d\n", slices.Min(movementCounts), slices.Max(movementCounts), Avg(movementCounts))
 	fmt.Printf("Timings: min=%.2f, max=%.2f, avg=%.2f\n", slices.Min(timings), slices.Max(timings), FloatAvg(timings))
+	fmt.Printf("Distinct solutions: %d\n", len(solutions))
+
+	for html, index := range solutions {
+		f, _ := os.Create(fmt.Sprintf("pyutils/output-%d.html", index))
+		f.WriteString(html)
+		f.Close()
+	}
 }
 
 func Solve() *piece.Board {
@@ -106,7 +121,7 @@ func Solve() *piece.Board {
 		}
 	}
 
-	board := piece.NewBoard()
+	board := piece.NewBoard(pieceLookup)
 
 	for {
 		if board.PlaceNext(pieceLookup) {

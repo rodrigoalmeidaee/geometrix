@@ -1,6 +1,21 @@
 img.img {
-    width: 228px;
-    height: 228px;
+    width: 114px;
+    height: 114px;
+}
+
+table, tr, td {
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding: 0;
+}
+
+tr, td {
+    height: 114px;
+}
+
+td {
+    display: inline-block;
 }
 
 .img-W { transform: rotate(90deg); }
