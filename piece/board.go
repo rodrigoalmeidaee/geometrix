@@ -271,7 +271,7 @@ func (b *Board) Backtrack() bool {
 		}
 		tile.backtracking_queue = nil
 		b.currentPiece -= 1
-		if b.currentPiece == 0 {
+		if b.currentPiece == 1 {
 			return false
 		} else {
 			return b.Backtrack()
