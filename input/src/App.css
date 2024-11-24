@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+}
+
+.piece {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border: black solid 1px;
+}
+
+.piece-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.orientation-east {
+    transform: rotate(90deg) translate(38px, -38px);
+}
+
+.orientation-south {
+    transform: rotate(180deg) translateY(-76px);
+}
+
+.orientation-west {
+    transform: translate(-38px, 38px) rotate(270deg);
+}
+
+.picker-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.picker-cell {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+}
+
+.picker-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.numbered-piece .number {
+    text-align: center;
+    font-weight: bold;
+}
+
+.picker-table[data-orientation="south"] {
+    margin-top: -80px;
+}
+
+.finished-pieces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.catalog-output pre {
+    max-height: 100px;
+    overflow: auto;
+}
