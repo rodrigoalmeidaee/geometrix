@@ -1,6 +1,8 @@
 package piece
 
 import (
+	"encoding/base64"
+	"encoding/binary"
 	"fmt"
 	"time"
 )
@@ -30,6 +32,7 @@ type Tile struct {
 	interest_queue_pos int
 	restriction_count  int
 	xy                 Coordinate
+	generation         int
 }
 
 func (t *Tile) LookupKey() int {
@@ -59,27 +62,30 @@ type Board struct {
 	solveStart         int64
 	interest_queue     [BOARD_SIZE * BOARD_SIZE]*Tile
 	interest_queue_len int
+	target_generation  int
+	pieces_to_solve    int
 }
 
 func (b Board) String() string {
-	str := "<!doctype html>\n<html>\n<head>  <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" >\n</head>\n<body>\n  <table class=\"board\">\n"
-	idx := 0
-	for y := 1; y <= BOARD_SIZE; y++ {
-		str += "    <tr>\n"
-		for x := 1; x <= BOARD_SIZE; x++ {
-			pp := b.tiles[idx].placed_piece
-			str += fmt.Sprintf("      <td><img src=\"piece%d.png\" class=\"img img-%s\" /></td>\n", pp.piece.number, pp.orientation.String()[:1])
-			idx += 1
+	output := [BOARD_SIZE * BOARD_SIZE * 2]byte{}
+
+	for idx, t := range b.tiles {
+		if t.placed_piece != nil {
+			encodedData := uint16(t.placed_piece.piece.number)*4 + uint16(t.placed_piece.orientation)
+			binary.LittleEndian.PutUint16(output[idx*2:], encodedData)
+		} else {
+			binary.LittleEndian.PutUint16(output[idx*2:], 0)
 		}
-		str += "    </tr>\n"
 	}
-	return str + "  </table>\n</body>\n</html>"
+
+	return base64.StdEncoding.EncodeToString(output[:])
 }
 
-func NewBoard(pieces []Piece) Board {
+func NewBoard(pieces []Piece, targetGeneration int) Board {
 	board := Board{}
 	board.currentPiece = 0
 	board.pieceLookup = BuildLookup(pieces)
+	board.target_generation = targetGeneration
 
 	// set up tiles and border restrictions
 	for x := 1; x <= BOARD_SIZE; x++ {
@@ -87,21 +93,42 @@ func NewBoard(pieces []Piece) Board {
 			xy := Coordinate{x: x, y: y}
 			idx := xy.AsIndex()
 			board.tiles[idx] = &Tile{interest_queue_pos: -1, xy: xy}
+			borders := 0
+
 			if x == 1 {
 				board.tiles[idx].west_restriction = Border
 				board.IncRestrictionCount(board.tiles[idx])
+				borders += 1
 			}
 			if x == BOARD_SIZE {
 				board.tiles[idx].east_restriction = Border
 				board.IncRestrictionCount(board.tiles[idx])
+				borders += 1
 			}
 			if y == 1 {
 				board.tiles[idx].north_restriction = Border
 				board.IncRestrictionCount(board.tiles[idx])
+				borders += 1
 			}
 			if y == BOARD_SIZE {
 				board.tiles[idx].south_restriction = Border
 				board.IncRestrictionCount(board.tiles[idx])
+				borders += 1
+			}
+
+			if borders == 2 {
+				board.tiles[idx].generation = 0
+			} else {
+				board.tiles[idx].generation = min(
+					x,
+					BOARD_SIZE-x+1,
+					y,
+					BOARD_SIZE-y+1,
+				)
+			}
+
+			if board.tiles[idx].generation <= targetGeneration {
+				board.pieces_to_solve += 1
 			}
 		}
 	}
@@ -119,7 +146,7 @@ func NewBoard(pieces []Piece) Board {
 }
 
 func (b *Board) IsSolved() bool {
-	return b.currentPiece == BOARD_SIZE*BOARD_SIZE
+	return b.currentPiece == b.pieces_to_solve
 }
 
 func BuildLookup(pieces []Piece) [LOOKUP_SIZE]*PiecePlacementLookup {
@@ -149,6 +176,9 @@ func (b *Board) GetNextCoordinate() Coordinate {
 
 	for i := 0; i < b.interest_queue_len; i++ {
 		t := b.interest_queue[i]
+		if t.generation > b.target_generation {
+			continue
+		}
 		lookupKey := t.LookupKey()
 		lookup := b.pieceLookup[lookupKey]
 		choices := uint8(0)

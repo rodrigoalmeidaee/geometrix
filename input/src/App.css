@@ -66,3 +66,18 @@ body {
     max-height: 100px;
     overflow: auto;
 }
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-field input {
+    flex: 1;
+}
+
+.solution {
+    display: flex;
+    width: 3240px;
+    flex-wrap: wrap;
+}

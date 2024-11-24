@@ -12,16 +12,18 @@ import (
 
 func main() {
 	var (
-		mode          string
-		sortAlgorithm string
+		mode             string
+		sortAlgorithm    string
+		targetGeneration int
 	)
 
 	flag.StringVar(&mode, "mode", "solve", "Mode to run the program in")
 	flag.StringVar(&sortAlgorithm, "sort", "none", "Sort algorithm to use")
+	flag.IntVar(&targetGeneration, "gen", piece.BOARD_SIZE, "Solve only up to this generation")
 	flag.Parse()
 
 	if mode == "solve" {
-		board := Solve(sortAlgorithm)
+		board := Solve(sortAlgorithm, targetGeneration)
 		if board != nil {
 			fmt.Fprintf(os.Stderr, "Solved in %d movements!\n", piece.MovementCount)
 			fmt.Printf("%s", *board)
@@ -41,7 +43,7 @@ func Profile(numAttempts int, sortAlgorithm string) {
 	for i := 0; i < numAttempts; i++ {
 		start := time.Now()
 		piece.MovementCount = 0
-		board := Solve(sortAlgorithm)
+		board := Solve(sortAlgorithm, piece.BOARD_SIZE)
 		if board == nil {
 			fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
 			return
@@ -64,7 +66,7 @@ func Profile(numAttempts int, sortAlgorithm string) {
 	}
 }
 
-func Solve(sortAlgorithm string) *piece.Board {
+func Solve(sortAlgorithm string, targetGeneration int) *piece.Board {
 	pieces := piece.GetPieces()
 	perm := rand.Perm(len(pieces))
 	shuffledPieces := make([]piece.Piece, len(pieces))
@@ -73,7 +75,7 @@ func Solve(sortAlgorithm string) *piece.Board {
 		shuffledPieces[v] = pieces[i]
 	}
 
-	board := piece.NewBoard(shuffledPieces)
+	board := piece.NewBoard(shuffledPieces, targetGeneration)
 
 	for {
 		if board.PlaceNext() {

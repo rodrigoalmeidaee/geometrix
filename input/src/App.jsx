@@ -35,6 +35,7 @@ const FACE_OPTIONS = {
 const App = () => {
 
   const [pieces, setPieces] = useState(JSON.parse(localStorage.getItem('geomtrix-pieces-v1')) ?? []);
+  const [activeSolution, setActiveSolution] = useState(null);
 
   useEffect(() => {
     if (pieces.length) {
@@ -78,6 +79,23 @@ const App = () => {
     setPieces(pieces.filter(p => p !== piece));
   }
 
+  const handleCheckSolve = () => {
+    const solutionBase64 = document.getElementById('solution').value;
+    const solutionBytes = atob(solutionBase64);
+    const solution = [];
+    for (let i = 0; i < solutionBytes.length; i += 2) {
+      const encodedPlacement = solutionBytes.charCodeAt(i) + solutionBytes.charCodeAt(i + 1) * 256;
+      if (encodedPlacement === 0) {
+        solution.push([null, null]);
+      } else {
+        const orientation = encodedPlacement % 4;
+        const pieceNumber = Math.floor(encodedPlacement / 4);
+        solution.push([pieceNumber, orientation]);
+      }
+    }
+    setActiveSolution(solution);
+  };
+
   return (
     <div>
       <h3>Catálogo de Peças</h3>
@@ -91,7 +109,15 @@ const App = () => {
         </div>
       )}
       <hr />
-      <div className="finished-pieces">
+      <div className="solution-inbox">
+        <h3>Verificador de Solução</h3>
+        <div className="input-field">
+          <input type="text" name="solution" id="solution" />
+          <button type="submit" onClick={handleCheckSolve}>Verificar</button>
+        </div>
+      </div>
+      <hr />
+      {!activeSolution && (<div className="finished-pieces">
         {[...pieces].reverse().map((piece, index) => (
           <Piece key={index} number={pieces.length - index} onRemove={index === 0 ? () => onPieceDropped(piece) : null}>
             {partFromSpec(piece.north, 'north')}
@@ -100,7 +126,26 @@ const App = () => {
             {partFromSpec(piece.west, 'west')}
           </Piece>
         ))}
-      </div>
+      </div>)}
+      {activeSolution && (
+        <div className="solution">
+          {
+            activeSolution.map(([pieceNumber, orientation]) => {
+              console.log(pieceNumber, orientation);
+              const piece = pieceNumber !== null ? pieces[pieceNumber - 1] : null;
+              const faces = ['north', 'east', 'south', 'west', 'north', 'east', 'south', 'west'];
+              return (
+                <Piece key={pieceNumber}>
+                  {piece && partFromSpec(piece.north, faces[4 - orientation])}
+                  {piece && partFromSpec(piece.east, faces[5 - orientation])}
+                  {piece && partFromSpec(piece.south, faces[6 - orientation])}
+                  {piece && partFromSpec(piece.west, faces[7 - orientation])}
+                </Piece>
+              )
+            })
+          }
+        </div>
+      )}
     </div>
   );
 };
