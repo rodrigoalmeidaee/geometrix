@@ -4,12 +4,18 @@ import (
 	"fmt"
 )
 
-const BOARD_SIZE = 6
+const BOARD_SIZE = 20
 const DEBUG = 0
 const INFO = 1
 const WARN = 2
 const ERROR = 3
 const LOG_LEVEL = 2
+
+const PATTERN_COUNT = 34
+const M1 = (PATTERN_COUNT + 1)
+const M2 = (M1 * (PATTERN_COUNT + 1))
+const M3 = (M2 * (PATTERN_COUNT + 1))
+const LOOKUP_SIZE = 1500625
 
 var MovementCount = 0
 
@@ -23,7 +29,7 @@ type Tile struct {
 }
 
 func (t *Tile) LookupKey() int {
-	return int(t.north_restriction) + int(t.east_restriction)*9 + int(t.south_restriction)*81 + int(t.west_restriction)*729
+	return int(t.north_restriction) + int(t.east_restriction)*M1 + int(t.south_restriction)*M2 + int(t.west_restriction)*M3
 }
 
 func (t *Tile) Dequeue() *PiecePlacement {
@@ -42,9 +48,10 @@ var IterationOrder = [BOARD_SIZE * BOARD_SIZE]Coordinate{
 }
 
 type Board struct {
-	tiles        [BOARD_SIZE * BOARD_SIZE]*Tile
-	currentPiece int
-	pieceLookup  [6561]*PiecePlacementLookup
+	tiles           [BOARD_SIZE * BOARD_SIZE]*Tile
+	currentPiece    int
+	pieceLookup     [LOOKUP_SIZE]*PiecePlacementLookup
+	maxPlacedPieces int
 }
 
 func (b Board) String() string {
@@ -102,8 +109,8 @@ func (b *Board) IsSolved() bool {
 	return b.currentPiece == BOARD_SIZE*BOARD_SIZE
 }
 
-func BuildLookup(pieces []Piece) [6561]*PiecePlacementLookup {
-	pieceLookup := [6561]*PiecePlacementLookup{}
+func BuildLookup(pieces []Piece) [LOOKUP_SIZE]*PiecePlacementLookup {
+	pieceLookup := [LOOKUP_SIZE]*PiecePlacementLookup{}
 	for _, p := range pieces {
 		for _, pp := range p.Rotations() {
 			for _, k := range pp.Keys() {
@@ -186,7 +193,7 @@ func (b *Board) PlaceNext() bool {
 	}
 
 	if LOG_LEVEL <= DEBUG {
-		fmt.Printf("  Restrictions for this tile: N=%s E=%s S=%s W=%s\n", tile.north_restriction, tile.east_restriction, tile.south_restriction, tile.west_restriction)
+		fmt.Printf("  Restrictions for this tile: N=%d E=%d S=%d W=%d\n", tile.north_restriction, tile.east_restriction, tile.south_restriction, tile.west_restriction)
 		fmt.Printf("  Matching piece placements: %d\n", len(backtracking_queue))
 	}
 
@@ -201,9 +208,16 @@ func (b *Board) PlaceNext() bool {
 
 	nextCandidate := tile.Dequeue()
 	if LOG_LEVEL <= INFO {
-		fmt.Printf("  Placing piece %d facing %s (%s, %s, %s, %s)\n", nextCandidate.piece.number, nextCandidate.orientation, nextCandidate.north, nextCandidate.east, nextCandidate.south, nextCandidate.west)
+		fmt.Printf("  Placing piece %d facing %s (%d, %d, %d, %d)\n", nextCandidate.piece.number, nextCandidate.orientation, nextCandidate.north, nextCandidate.east, nextCandidate.south, nextCandidate.west)
 	}
 	b.Place(nextCandidate, coord)
+
+	if b.currentPiece > b.maxPlacedPieces {
+		b.maxPlacedPieces = b.currentPiece
+		if LOG_LEVEL <= WARN {
+			fmt.Printf("  Achievement unlocked! Placed %d pieces\n", b.maxPlacedPieces)
+		}
+	}
 	return true
 }
 

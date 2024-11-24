@@ -415,10 +415,10 @@ const catalogOutput = (pieces) => {
   const sortedKeys = Object.keys(possibleFaces).sort((a, b) => a.localeCompare(b));
 
   Object.keys(possibleFaces).forEach(key => {
-    possibleFaces[key] = sortedKeys.indexOf(key);
+    possibleFaces[key] = sortedKeys.indexOf(key) + 1;
   });
 
-  return '[\n' + pieces.map(piece => (
-    '  ' + ['north','south','east','west'].map(face => possibleFaces[`${piece[face].kind}/${piece[face].fgColor}/${piece[face].bgColor}`]).join(', ')
-  )).join(',\n') + '\n]';
+  return '    var pieces = []Piece{\n' + pieces.map(piece => (
+    '        New(' + ['north','east','south','west'].map(face => possibleFaces[`${piece[face].kind}/${piece[face].fgColor}/${piece[face].bgColor}`]).join(', ') + '),'
+  )).join('\n') + '\n    }';
 }

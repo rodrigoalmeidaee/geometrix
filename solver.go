@@ -10,50 +10,6 @@ import (
 	"time"
 )
 
-func GetPieces() []piece.Piece {
-	piece.ResetPieceNumber()
-
-	var pieces = []piece.Piece{
-		piece.New(piece.BlueStar, piece.YellowGreenTriangle, piece.Border, piece.RedYellowTriangle),
-		piece.New(piece.BlueStar, piece.PinkTrident, piece.BlueStar, piece.YellowGreenTriangle),
-		piece.New(piece.PinkTrident, piece.BlueStar, piece.YellowCircle, piece.Border),
-		piece.New(piece.PinkCircle, piece.RedYellowTriangle, piece.Border, piece.RedYellowTriangle),
-		piece.New(piece.RedYellowTriangle, piece.BlueStar, piece.PinkCircle, piece.YellowGreenTriangle),
-		piece.New(piece.PinkCircle, piece.PinkTrident, piece.RedTrident, piece.Border),
-		piece.New(piece.Border, piece.RedTrident, piece.YellowCircle, piece.YellowGreenTriangle),
-		piece.New(piece.RedYellowTriangle, piece.PinkCircle, piece.YellowCircle, piece.BlueStar),
-		piece.New(piece.YellowCircle, piece.RedTrident, piece.PinkCircle, piece.Border),
-		piece.New(piece.YellowCircle, piece.Border, piece.Border, piece.RedYellowTriangle),
-		piece.New(piece.YellowGreenTriangle, piece.PinkCircle, piece.RedYellowTriangle, piece.PinkTrident),
-		piece.New(piece.PinkCircle, piece.Border, piece.YellowCircle, piece.BlueStar),
-		piece.New(piece.YellowGreenTriangle, piece.RedTrident, piece.Border, piece.Border),
-		piece.New(piece.RedTrident, piece.PinkTrident, piece.BlueStar, piece.YellowGreenTriangle),
-		piece.New(piece.YellowCircle, piece.Border, piece.RedTrident, piece.YellowGreenTriangle),
-		piece.New(piece.Border, piece.YellowGreenTriangle, piece.YellowCircle, piece.RedYellowTriangle),
-		piece.New(piece.YellowCircle, piece.PinkCircle, piece.YellowGreenTriangle, piece.Border),
-		piece.New(piece.RedTrident, piece.YellowCircle, piece.RedYellowTriangle, piece.YellowGreenTriangle),
-		piece.New(piece.BlueStar, piece.RedYellowTriangle, piece.Border, piece.PinkTrident),
-		piece.New(piece.YellowGreenTriangle, piece.YellowCircle, piece.RedTrident, piece.RedYellowTriangle),
-		piece.New(piece.PinkTrident, piece.Border, piece.YellowCircle, piece.PinkCircle),
-		piece.New(piece.BlueStar, piece.YellowGreenTriangle, piece.RedTrident, piece.PinkCircle),
-		piece.New(piece.PinkCircle, piece.RedTrident, piece.PinkTrident, piece.Border),
-		piece.New(piece.PinkCircle, piece.RedTrident, piece.YellowCircle, piece.YellowGreenTriangle),
-		piece.New(piece.RedYellowTriangle, piece.RedTrident, piece.Border, piece.Border),
-		piece.New(piece.PinkTrident, piece.RedTrident, piece.YellowGreenTriangle, piece.PinkCircle),
-		piece.New(piece.RedTrident, piece.PinkCircle, piece.YellowCircle, piece.Border),
-		piece.New(piece.PinkCircle, piece.PinkTrident, piece.RedTrident, piece.PinkTrident),
-		piece.New(piece.BlueStar, piece.PinkCircle, piece.PinkTrident, piece.PinkCircle),
-		piece.New(piece.YellowCircle, piece.PinkCircle, piece.Border, piece.PinkTrident),
-		piece.New(piece.PinkCircle, piece.YellowCircle, piece.BlueStar, piece.YellowCircle),
-		piece.New(piece.PinkTrident, piece.RedYellowTriangle, piece.Border, piece.PinkCircle),
-		piece.New(piece.YellowGreenTriangle, piece.PinkTrident, piece.Border, piece.Border),
-		piece.New(piece.RedTrident, piece.YellowCircle, piece.BlueStar, piece.YellowCircle),
-		piece.New(piece.BlueStar, piece.PinkTrident, piece.BlueStar, piece.YellowGreenTriangle),
-		piece.New(piece.RedYellowTriangle, piece.YellowCircle, piece.BlueStar, piece.YellowGreenTriangle),
-	}
-	return pieces
-}
-
 func main() {
 	var (
 		mode          string
@@ -109,29 +65,13 @@ func Profile(numAttempts int, sortAlgorithm string) {
 }
 
 func Solve(sortAlgorithm string) *piece.Board {
-	pieces := GetPieces()
-	pieceStats := piece.GetPieceStats(pieces)
+	pieces := piece.GetPieces()
 	perm := rand.Perm(len(pieces))
 	shuffledPieces := make([]piece.Piece, len(pieces))
 
 	for i, v := range perm {
 		shuffledPieces[v] = pieces[i]
 	}
-
-	SortKey := func(p piece.Piece) int {
-		if sortAlgorithm == "rarest-face" {
-			return piece.GetPieceRarity(pieceStats, p, "face", "min")
-		} else if sortAlgorithm == "rarest-corner" {
-			return piece.GetPieceRarity(pieceStats, p, "corner", "min")
-		} else if sortAlgorithm == "common-corner" {
-			return -piece.GetPieceRarity(pieceStats, p, "corner", "min")
-		}
-		return 0
-	}
-
-	slices.SortStableFunc(shuffledPieces, func(a, b piece.Piece) int {
-		return SortKey(a) - SortKey(b)
-	})
 
 	board := piece.NewBoard(shuffledPieces)
 

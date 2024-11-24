@@ -9,61 +9,12 @@ type Pattern uint8
 type Face uint8
 
 const (
-	Blue     = 1
-	BlueStar = 1
-
-	Border = 2
-
-	Purple     = 3
-	PinkCircle = 3
-
-	Yellow      = 4
-	PinkTrident = 4
-
-	White        = 5
-	YellowCircle = 5
-
-	Pink              = 6
-	RedYellowTriangle = 6
-
-	Green               = 7
-	YellowGreenTriangle = 7
-
-	Red        = 8
-	RedTrident = 8
+	North  = 0
+	East   = 1
+	South  = 2
+	West   = 3
+	Border = 8
 )
-
-const (
-	North = 0
-	East  = 1
-	South = 2
-	West  = 3
-)
-
-func (p Pattern) String() string {
-	switch p {
-	case 0:
-		return "--"
-	case Blue:
-		return "Blue"
-	case Border:
-		return "Border"
-	case Purple:
-		return "Purple"
-	case Yellow:
-		return "Yellow"
-	case White:
-		return "White"
-	case Pink:
-		return "Pink"
-	case Green:
-		return "Green"
-	case Red:
-		return "Red"
-	default:
-		return "Unknown"
-	}
-}
 
 func (f Face) String() string {
 	switch f {
@@ -136,7 +87,7 @@ func New(north Pattern, east Pattern, south Pattern, west Pattern) Piece {
 }
 
 func (p Piece) String() string {
-	return fmt.Sprintf("Piece %d: N=%s E=%s S=%s W=%s", p.number, p.north, p.east, p.south, p.west)
+	return fmt.Sprintf("Piece %d: N=%d E=%d S=%d W=%d", p.number, p.north, p.east, p.south, p.west)
 }
 
 func (p Piece) Rotations() [4]PiecePlacement {
@@ -157,9 +108,9 @@ func (p Piece) Rotations() [4]PiecePlacement {
 func (pp PiecePlacement) Keys() [11]int {
 
 	var N = int(pp.north)
-	var E = int(pp.east) * 9
-	var S = int(pp.south) * 81
-	var W = int(pp.west) * 729
+	var E = int(pp.east) * M1
+	var S = int(pp.south) * M2
+	var W = int(pp.west) * M3
 
 	return [11]int{
 		N + E + S + W,
@@ -189,18 +140,18 @@ func GetPieceStats(pieces []Piece) map[int]int {
 
 	// Statistics for corners
 	for _, p := range pieces {
-		pieceStats[int(p.north)+9*int(p.east)] += 1
-		pieceStats[int(p.east)+9*int(p.south)] += 1
-		pieceStats[int(p.south)+9*int(p.west)] += 1
-		pieceStats[int(p.west)+9*int(p.north)] += 1
+		pieceStats[int(p.north)+M1*int(p.east)] += 1
+		pieceStats[int(p.east)+M1*int(p.south)] += 1
+		pieceStats[int(p.south)+M1*int(p.west)] += 1
+		pieceStats[int(p.west)+M1*int(p.north)] += 1
 	}
 
 	// Statistics for U shapes
 	for _, p := range pieces {
-		pieceStats[int(p.north)+9*int(p.east)+81*int(p.south)] += 1
-		pieceStats[int(p.east)+9*int(p.south)+81*int(p.west)] += 1
-		pieceStats[int(p.south)+9*int(p.west)+81*int(p.north)] += 1
-		pieceStats[int(p.west)+9*int(p.north)+81*int(p.east)] += 1
+		pieceStats[int(p.north)+M1*int(p.east)+M2*int(p.south)] += 1
+		pieceStats[int(p.east)+M1*int(p.south)+M2*int(p.west)] += 1
+		pieceStats[int(p.south)+M1*int(p.west)+M2*int(p.north)] += 1
+		pieceStats[int(p.west)+M1*int(p.north)+M2*int(p.east)] += 1
 	}
 
 	return pieceStats
@@ -216,15 +167,15 @@ func GetPieceRarity(pieceStats map[int]int, piece Piece, facet string, aggregate
 		rarities[2] = pieceStats[int(piece.south)]
 		rarities[3] = pieceStats[int(piece.west)]
 	} else if facet == "corner" {
-		rarities[0] = pieceStats[int(piece.north)+9*int(piece.east)]
-		rarities[1] = pieceStats[int(piece.east)+9*int(piece.south)]
-		rarities[2] = pieceStats[int(piece.south)+9*int(piece.west)]
-		rarities[3] = pieceStats[int(piece.west)+9*int(piece.north)]
+		rarities[0] = pieceStats[int(piece.north)+M1*int(piece.east)]
+		rarities[1] = pieceStats[int(piece.east)+M1*int(piece.south)]
+		rarities[2] = pieceStats[int(piece.south)+M1*int(piece.west)]
+		rarities[3] = pieceStats[int(piece.west)+M1*int(piece.north)]
 	} else if facet == "u" {
-		rarities[0] = pieceStats[int(piece.north)+9*int(piece.east)+81*int(piece.south)]
-		rarities[1] = pieceStats[int(piece.east)+9*int(piece.south)+81*int(piece.west)]
-		rarities[2] = pieceStats[int(piece.south)+9*int(piece.west)+81*int(piece.north)]
-		rarities[3] = pieceStats[int(piece.west)+9*int(piece.north)+81*int(piece.east)]
+		rarities[0] = pieceStats[int(piece.north)+M1*int(piece.east)+M2*int(piece.south)]
+		rarities[1] = pieceStats[int(piece.east)+M1*int(piece.south)+M2*int(piece.west)]
+		rarities[2] = pieceStats[int(piece.south)+M1*int(piece.west)+M2*int(piece.north)]
+		rarities[3] = pieceStats[int(piece.west)+M1*int(piece.north)+M2*int(piece.east)]
 	} else {
 		panic(facet)
 	}
@@ -241,7 +192,7 @@ func GetPieceRarity(pieceStats map[int]int, piece Piece, facet string, aggregate
 type PiecePlacementLookup struct {
 	pieces           []*PiecePlacement
 	count            uint8
-	pieceRepetitions [37]uint8
+	pieceRepetitions [401]uint8
 }
 
 func NewPiecePlacementLookup() *PiecePlacementLookup {
