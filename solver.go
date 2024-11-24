@@ -34,7 +34,7 @@ func main() {
 }
 
 func Profile(numAttempts int, sortAlgorithm string) {
-	movementCounts := make([]int, numAttempts)
+	movementCounts := make([]int64, numAttempts)
 	timings := make([]float64, numAttempts)
 	solutions := make(map[string]int)
 
@@ -88,12 +88,12 @@ func Solve(sortAlgorithm string) *piece.Board {
 	}
 }
 
-func Avg(nums []int) int {
-	sum := 0
+func Avg(nums []int64) int64 {
+	sum := int64(0)
 	for _, n := range nums {
 		sum += n
 	}
-	return sum / len(nums)
+	return sum / int64(len(nums))
 }
 
 func FloatAvg(nums []float64) float64 {

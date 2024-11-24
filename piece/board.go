@@ -2,6 +2,7 @@ package piece
 
 import (
 	"fmt"
+	"time"
 )
 
 const BOARD_SIZE = 20
@@ -17,7 +18,7 @@ const M2 = (M1 * (PATTERN_COUNT + 1))
 const M3 = (M2 * (PATTERN_COUNT + 1))
 const LOOKUP_SIZE = 1500625
 
-var MovementCount = 0
+var MovementCount = int64(0)
 
 type Tile struct {
 	backtracking_queue []*PiecePlacement
@@ -26,6 +27,9 @@ type Tile struct {
 	east_restriction   Pattern
 	south_restriction  Pattern
 	west_restriction   Pattern
+	interest_queue_pos int
+	restriction_count  int
+	xy                 Coordinate
 }
 
 func (t *Tile) LookupKey() int {
@@ -48,10 +52,13 @@ var IterationOrder = [BOARD_SIZE * BOARD_SIZE]Coordinate{
 }
 
 type Board struct {
-	tiles           [BOARD_SIZE * BOARD_SIZE]*Tile
-	currentPiece    int
-	pieceLookup     [LOOKUP_SIZE]*PiecePlacementLookup
-	maxPlacedPieces int
+	tiles              [BOARD_SIZE * BOARD_SIZE]*Tile
+	currentPiece       int
+	pieceLookup        [LOOKUP_SIZE]*PiecePlacementLookup
+	maxPlacedPieces    int
+	solveStart         int64
+	interest_queue     [BOARD_SIZE * BOARD_SIZE]*Tile
+	interest_queue_len int
 }
 
 func (b Board) String() string {
@@ -77,19 +84,24 @@ func NewBoard(pieces []Piece) Board {
 	// set up tiles and border restrictions
 	for x := 1; x <= BOARD_SIZE; x++ {
 		for y := 1; y <= BOARD_SIZE; y++ {
-			idx := Coordinate{x: x, y: y}.AsIndex()
-			board.tiles[idx] = &Tile{}
+			xy := Coordinate{x: x, y: y}
+			idx := xy.AsIndex()
+			board.tiles[idx] = &Tile{interest_queue_pos: -1, xy: xy}
 			if x == 1 {
 				board.tiles[idx].west_restriction = Border
+				board.IncRestrictionCount(board.tiles[idx])
 			}
 			if x == BOARD_SIZE {
 				board.tiles[idx].east_restriction = Border
+				board.IncRestrictionCount(board.tiles[idx])
 			}
 			if y == 1 {
 				board.tiles[idx].north_restriction = Border
+				board.IncRestrictionCount(board.tiles[idx])
 			}
 			if y == BOARD_SIZE {
 				board.tiles[idx].south_restriction = Border
+				board.IncRestrictionCount(board.tiles[idx])
 			}
 		}
 	}
@@ -102,6 +114,7 @@ func NewBoard(pieces []Piece) Board {
 		}
 	}
 
+	board.solveStart = time.Now().UnixMilli()
 	return board
 }
 
@@ -132,42 +145,27 @@ func BuildLookup(pieces []Piece) [LOOKUP_SIZE]*PiecePlacementLookup {
 
 func (b *Board) GetNextCoordinate() Coordinate {
 	minChoices := uint8(255)
-	minTile := -1
+	bestCoordinate := Coordinate{x: 0, y: 0}
 
-	for i, t := range b.tiles {
-		if t.placed_piece == nil {
-			restrictions := 0
-			if t.east_restriction != 0 {
-				restrictions += 1
-			}
-			if t.west_restriction != 0 {
-				restrictions += 1
-			}
-			if t.north_restriction != 0 {
-				restrictions += 1
-			}
-			if t.south_restriction != 0 {
-				restrictions += 1
-			}
-
-			if restrictions < 2 {
-				continue
-			}
-
-			lookupKey := t.LookupKey()
-			lookup := b.pieceLookup[lookupKey]
-			choices := uint8(0)
-			if lookup != nil {
-				choices = lookup.count
-			}
-			if choices < minChoices {
-				minChoices = choices
-				minTile = i
-			}
+	for i := 0; i < b.interest_queue_len; i++ {
+		t := b.interest_queue[i]
+		lookupKey := t.LookupKey()
+		lookup := b.pieceLookup[lookupKey]
+		choices := uint8(0)
+		if lookup != nil {
+			choices = lookup.count
+		}
+		if choices < minChoices {
+			minChoices = choices
+			bestCoordinate = t.xy
 		}
 	}
 
-	IterationOrder[b.currentPiece] = Coordinate{x: minTile%BOARD_SIZE + 1, y: minTile/BOARD_SIZE + 1}
+	if bestCoordinate.x == 0 {
+		panic("No more interesting tiles")
+	}
+
+	IterationOrder[b.currentPiece] = bestCoordinate
 	return IterationOrder[b.currentPiece]
 }
 
@@ -223,53 +221,93 @@ func (b *Board) PlaceNext() bool {
 
 func (b *Board) Place(pp *PiecePlacement, xy Coordinate) {
 	MovementCount += 1
+	if MovementCount%10000000 == 0 && LOG_LEVEL >= WARN {
+		timeElapsed := time.Now().UnixMilli() - b.solveStart
+		movementsPerSecond := float64(MovementCount) / float64(timeElapsed) / 1000
+		fmt.Printf("  %dM movements so far, current rate %.2fM movements per second\n", MovementCount/1000000, movementsPerSecond)
+	}
 	idx := xy.AsIndex()
 	tile := b.tiles[idx]
 	tile.placed_piece = pp
+	if tile.interest_queue_pos != -1 {
+		b.RemoveFromInterestQueue(tile)
+	}
 	pp.MarkUsed()
 
 	// update restrictions on neighboring tiles and check if it doesn't create an unsolvable situation
 	if xy.x > 1 {
 		left_tile := b.tiles[idx-1]
-		left_tile.east_restriction = pp.west
+		if left_tile.east_restriction == 0 {
+			left_tile.east_restriction = pp.west
+			b.IncRestrictionCount(left_tile)
+		}
 	}
 	if xy.x < BOARD_SIZE {
 		right_tile := b.tiles[idx+1]
-		right_tile.west_restriction = pp.east
+		if right_tile.west_restriction == 0 {
+			right_tile.west_restriction = pp.east
+			b.IncRestrictionCount(right_tile)
+		}
 	}
 	if xy.y > 1 {
 		top_tile := b.tiles[idx-BOARD_SIZE]
-		top_tile.south_restriction = pp.north
+		if top_tile.south_restriction == 0 {
+			top_tile.south_restriction = pp.north
+			b.IncRestrictionCount(top_tile)
+		}
 	}
 	if xy.y < BOARD_SIZE {
 		bottom_tile := b.tiles[idx+BOARD_SIZE]
-		bottom_tile.north_restriction = pp.south
+		if bottom_tile.north_restriction == 0 {
+			bottom_tile.north_restriction = pp.south
+			b.IncRestrictionCount(bottom_tile)
+		}
 	}
 }
 
 func (b *Board) Unplace(xy Coordinate) {
 	MovementCount += 1
+	if MovementCount%10000000 == 0 && LOG_LEVEL >= WARN {
+		timeElapsed := time.Now().UnixMilli() - b.solveStart
+		movementsPerSecond := float64(MovementCount) / float64(timeElapsed) / 1000
+		fmt.Printf("  %dM movements so far, current rate %.2fM movements per second\n", MovementCount/1000000, movementsPerSecond)
+	}
 	idx := xy.AsIndex()
 	tile := b.tiles[idx]
 	tile.placed_piece.MarkUnused()
 	tile.placed_piece = nil
+	if tile.restriction_count >= 2 {
+		b.AddToInterestQueue(tile)
+	}
 
 	// update restrictions on neighboring tiles
 	if xy.x > 1 {
 		left_tile := b.tiles[idx-1]
-		left_tile.east_restriction = 0
+		if left_tile.east_restriction != 0 {
+			left_tile.east_restriction = 0
+			b.DecRestrictionCount(left_tile)
+		}
 	}
 	if xy.x < BOARD_SIZE {
 		right_tile := b.tiles[idx+1]
-		right_tile.west_restriction = 0
+		if right_tile.west_restriction != 0 {
+			right_tile.west_restriction = 0
+			b.DecRestrictionCount(right_tile)
+		}
 	}
 	if xy.y > 1 {
 		top_tile := b.tiles[idx-BOARD_SIZE]
-		top_tile.south_restriction = 0
+		if top_tile.south_restriction != 0 {
+			top_tile.south_restriction = 0
+			b.DecRestrictionCount(top_tile)
+		}
 	}
 	if xy.y < BOARD_SIZE {
 		bottom_tile := b.tiles[idx+BOARD_SIZE]
-		bottom_tile.north_restriction = 0
+		if bottom_tile.north_restriction != 0 {
+			bottom_tile.north_restriction = 0
+			b.DecRestrictionCount(bottom_tile)
+		}
 	}
 }
 
@@ -307,4 +345,37 @@ func (b *Board) Backtrack() bool {
 
 func (xy Coordinate) AsIndex() int {
 	return (xy.y-1)*BOARD_SIZE + xy.x - 1
+}
+
+func (b *Board) IncRestrictionCount(t *Tile) {
+	t.restriction_count += 1
+	if t.restriction_count == 2 {
+		b.AddToInterestQueue(t)
+	}
+}
+
+func (b *Board) DecRestrictionCount(t *Tile) {
+	t.restriction_count -= 1
+	if t.restriction_count == 1 {
+		b.RemoveFromInterestQueue(t)
+	}
+}
+
+func (b *Board) AddToInterestQueue(t *Tile) {
+	if t.interest_queue_pos != -1 {
+		return
+	}
+	b.interest_queue[b.interest_queue_len] = t
+	t.interest_queue_pos = b.interest_queue_len
+	b.interest_queue_len += 1
+}
+
+func (b *Board) RemoveFromInterestQueue(t *Tile) {
+	b.interest_queue_len -= 1
+	if t.interest_queue_pos != b.interest_queue_len {
+		other_tile := b.interest_queue[b.interest_queue_len]
+		other_tile.interest_queue_pos = t.interest_queue_pos
+		b.interest_queue[t.interest_queue_pos] = other_tile
+	}
+	t.interest_queue_pos = -1
 }
