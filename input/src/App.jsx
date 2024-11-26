@@ -117,7 +117,7 @@ const App = () => {
         </div>
       </div>
       <hr />
-      {!activeSolution && (<div className="finished-pieces">
+      {!activeSolution && (<div className="finished-pieces" key={activeSolution}>
         {[...pieces].reverse().map((piece, index) => (
           <Piece key={index} number={pieces.length - index} onRemove={index === 0 ? () => onPieceDropped(piece) : null}>
             {partFromSpec(piece.north, 'north')}

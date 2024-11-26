@@ -56,15 +56,16 @@ var IterationOrder = [BOARD_SIZE * BOARD_SIZE]Coordinate{
 }
 
 type Board struct {
-	tiles              [BOARD_SIZE * BOARD_SIZE]*Tile
-	currentPiece       int
-	pieceLookup        [LOOKUP_SIZE]*PiecePlacementLookup
-	maxPlacedPieces    int
-	solveStart         int64
-	interest_queue     [BOARD_SIZE * BOARD_SIZE]*Tile
-	interest_queue_len int
-	target_generation  int
-	pieces_to_solve    int
+	tiles               [BOARD_SIZE * BOARD_SIZE]*Tile
+	currentPiece        int
+	pieceLookup         [LOOKUP_SIZE]*PiecePlacementLookup
+	maxPlacedPieces     int
+	solveStart          int64
+	interest_queue      [BOARD_SIZE * BOARD_SIZE]*Tile
+	interest_queue_len  int
+	target_generation   int
+	pieces_to_solve     int
+	next_tile_placement string
 }
 
 func (b Board) String() string {
@@ -82,11 +83,12 @@ func (b Board) String() string {
 	return base64.StdEncoding.EncodeToString(output[:])
 }
 
-func NewBoard(pieces []Piece, targetGeneration int) Board {
+func NewBoard(pieces []Piece, targetGeneration int, nextTilePlacement string) Board {
 	board := Board{}
 	board.currentPiece = 0
 	board.pieceLookup = BuildLookup(pieces)
 	board.target_generation = targetGeneration
+	board.next_tile_placement = nextTilePlacement
 
 	// set up tiles and border restrictions
 	for x := 1; x <= BOARD_SIZE; x++ {
@@ -174,10 +176,20 @@ func BuildLookup(pieces []Piece) [LOOKUP_SIZE]*PiecePlacementLookup {
 func (b *Board) GetNextCoordinate() Coordinate {
 	minChoices := uint8(255)
 	bestCoordinate := Coordinate{x: 0, y: 0}
+	maxGeneration := b.target_generation
+
+	if b.next_tile_placement == "radial" {
+		for i := 0; i < b.interest_queue_len; i++ {
+			t := b.interest_queue[i]
+			if t.generation < maxGeneration {
+				maxGeneration = t.generation
+			}
+		}
+	}
 
 	for i := 0; i < b.interest_queue_len; i++ {
 		t := b.interest_queue[i]
-		if t.generation > b.target_generation {
+		if t.generation > maxGeneration {
 			continue
 		}
 		lookupKey := t.LookupKey()

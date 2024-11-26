@@ -6,67 +6,30 @@ import (
 	"math/rand"
 	"os"
 	"rsalmeidafl/geometrix/piece"
-	"slices"
-	"time"
 )
 
 func main() {
 	var (
-		mode             string
-		sortAlgorithm    string
-		targetGeneration int
+		sortAlgorithm     string
+		nextTilePlacement string
+		targetGeneration  int
 	)
 
-	flag.StringVar(&mode, "mode", "solve", "Mode to run the program in")
 	flag.StringVar(&sortAlgorithm, "sort", "none", "Sort algorithm to use")
 	flag.IntVar(&targetGeneration, "gen", piece.BOARD_SIZE, "Solve only up to this generation")
+	flag.StringVar(&nextTilePlacement, "nextpiece", "least-options", "How to pick the next tile to place")
 	flag.Parse()
 
-	if mode == "solve" {
-		board := Solve(sortAlgorithm, targetGeneration)
-		if board != nil {
-			fmt.Fprintf(os.Stderr, "Solved in %d movements!\n", piece.MovementCount)
-			fmt.Printf("%s", *board)
-		} else {
-			fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
-		}
-	} else if mode == "profile" {
-		Profile(10000, sortAlgorithm)
+	board := Solve(sortAlgorithm, targetGeneration, nextTilePlacement)
+	if board != nil {
+		fmt.Fprintf(os.Stderr, "Solved in %d movements!\n", piece.MovementCount)
+		fmt.Printf("%s", *board)
+	} else {
+		fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
 	}
 }
 
-func Profile(numAttempts int, sortAlgorithm string) {
-	movementCounts := make([]int64, numAttempts)
-	timings := make([]float64, numAttempts)
-	solutions := make(map[string]int)
-
-	for i := 0; i < numAttempts; i++ {
-		start := time.Now()
-		piece.MovementCount = 0
-		board := Solve(sortAlgorithm, piece.BOARD_SIZE)
-		if board == nil {
-			fmt.Fprintf(os.Stderr, "No solution found after %d movements.\n", piece.MovementCount)
-			return
-		}
-		movementCounts[i] = piece.MovementCount
-		timings[i] = float64(time.Since(start).Microseconds()) / 1000.0
-		if solutions[board.String()] == 0 {
-			solutions[board.String()] = len(solutions) + 1
-		}
-	}
-
-	fmt.Printf("Movements: min=%d, max=%d, avg=%d\n", slices.Min(movementCounts), slices.Max(movementCounts), Avg(movementCounts))
-	fmt.Printf("Timings: min=%.2f, max=%.2f, avg=%.2f\n", slices.Min(timings), slices.Max(timings), FloatAvg(timings))
-	fmt.Printf("Distinct solutions: %d\n", len(solutions))
-
-	for html, index := range solutions {
-		f, _ := os.Create(fmt.Sprintf("pyutils/output-%d.html", index))
-		f.WriteString(html)
-		f.Close()
-	}
-}
-
-func Solve(sortAlgorithm string, targetGeneration int) *piece.Board {
+func Solve(sortAlgorithm string, targetGeneration int, nextTilePlacement string) *piece.Board {
 	pieces := piece.GetPieces()
 	perm := rand.Perm(len(pieces))
 	shuffledPieces := make([]piece.Piece, len(pieces))
@@ -75,7 +38,7 @@ func Solve(sortAlgorithm string, targetGeneration int) *piece.Board {
 		shuffledPieces[v] = pieces[i]
 	}
 
-	board := piece.NewBoard(shuffledPieces, targetGeneration)
+	board := piece.NewBoard(shuffledPieces, targetGeneration, nextTilePlacement)
 
 	for {
 		if board.PlaceNext() {
