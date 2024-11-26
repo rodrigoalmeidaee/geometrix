@@ -11,7 +11,8 @@ const BOARD_SIZE = 20
 const DEBUG = 0
 const INFO = 1
 const WARN = 2
-const ERROR = 3
+const PARTIAL_PASS = 3
+const ERROR = 4
 const LOG_LEVEL = 2
 
 const PATTERN_COUNT = 34
@@ -244,6 +245,9 @@ func (b *Board) PlaceNext() bool {
 		b.maxPlacedPieces = b.currentPiece
 		if LOG_LEVEL <= WARN {
 			fmt.Printf("  Achievement unlocked! Placed %d pieces\n", b.maxPlacedPieces)
+			if b.maxPlacedPieces >= 144 {
+				fmt.Printf("%s\n", b)
+			}
 		}
 	}
 	return true
