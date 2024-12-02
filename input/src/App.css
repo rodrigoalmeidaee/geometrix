@@ -77,7 +77,11 @@ body {
 }
 
 .solution {
-    display: flex;
     width: 3240px;
-    flex-wrap: wrap;
+}
+
+.solution-row {
+    width: 3240px;
+    display: flex;
+    flex-direction: row;
 }

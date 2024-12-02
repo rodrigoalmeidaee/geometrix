@@ -1,0 +1,8802 @@
+[
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      }
+    },
+    {
+      "north": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Shuriken",
+        "fgColor": "green",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "west": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      }
+    },
+    {
+      "north": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "orange",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "west": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Error",
+        "fgColor": "purple",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "orange",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "yellow",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Circle",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Crown",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Star",
+        "fgColor": "pink",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "red",
+        "bgColor": "blue"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "orange",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "blue",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Gate",
+        "fgColor": "orange",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "pink",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Potion",
+        "fgColor": "yellow",
+        "bgColor": "darkBlue"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Shuriken",
+        "fgColor": "purple",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Octogon",
+        "fgColor": "yellow",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "green",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "BeveledSquare",
+        "fgColor": "yellow",
+        "bgColor": "orange"
+      },
+      "east": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Bird",
+        "fgColor": "red",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Plane",
+        "fgColor": "purple",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Bird",
+        "fgColor": "blue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "red",
+        "bgColor": "green"
+      },
+      "east": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "west": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "blue",
+        "bgColor": "purple"
+      },
+      "east": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "west": {
+        "kind": "Error",
+        "fgColor": "green",
+        "bgColor": "darkBlue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Triangle",
+        "fgColor": "yellow",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "west": {
+        "kind": "BeveledSquare",
+        "fgColor": "darkBlue",
+        "bgColor": "pink"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Tetris",
+        "fgColor": "green",
+        "bgColor": "red"
+      },
+      "east": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    },
+    {
+      "north": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "south": {
+        "kind": "Arrows",
+        "fgColor": "pink",
+        "bgColor": "yellow"
+      },
+      "east": {
+        "kind": "Border",
+        "fgColor": "gray",
+        "bgColor": "gray"
+      },
+      "west": {
+        "kind": "Crown",
+        "fgColor": "darkBlue",
+        "bgColor": "blue"
+      }
+    }
+  ]

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import './App.css';
 import Modal from 'react-modal';
 
@@ -36,6 +36,16 @@ const App = () => {
 
   const [pieces, setPieces] = useState(JSON.parse(localStorage.getItem('geomtrix-pieces-v1')) ?? []);
   const [activeSolution, setActiveSolution] = useState(null);
+  const [borderAnalysis, setBorderAnalysis] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const el = document.querySelector('.solution');
+      if (el) el.style.zoom = Math.max(0.25, Math.min((window.innerWidth - 20) / 3240, (window.innerHeight - 20) / 3240)).toFixed(3);
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, [])
 
   useEffect(() => {
     if (pieces.length) {
@@ -80,7 +90,13 @@ const App = () => {
   }
 
   const handleCheckSolve = () => {
-    const solutionBase64 = document.getElementById('solution').value;
+    let solutionBase64 = document.getElementById('solution').value;
+    let isBorderAnalysis = false;
+    if (solutionBase64.endsWith("#border")) {
+      isBorderAnalysis = true;
+      solutionBase64 = solutionBase64.replace("#border", "");
+    }
+    const borderAnalysis = {}
     const solutionBytes = atob(solutionBase64);
     const solution = [];
     for (let i = 0; i < solutionBytes.length; i += 2) {
@@ -91,9 +107,22 @@ const App = () => {
         const orientation = encodedPlacement % 4;
         const pieceNumber = Math.floor(encodedPlacement / 4);
         solution.push([pieceNumber, orientation]);
+        const piece = pieces[pieceNumber - 1];
+        if (piece.north.kind === 'Border' && piece.east.kind !== 'Border') {
+          const analysisKey = `${piece.east.kind}/${piece.east.fgColor}/${piece.east.bgColor}/${piece.west.kind}/${piece.west.fgColor}/${piece.west.bgColor}`;
+          const analysisValue = `${piece.south.kind}/${piece.south.fgColor}/${piece.south.bgColor}`;
+          if (!borderAnalysis[analysisKey]) {
+            borderAnalysis[analysisKey] = {};
+          }
+          if (!borderAnalysis[analysisKey][analysisValue]) {
+            borderAnalysis[analysisKey][analysisValue] = 0;
+          }
+          borderAnalysis[analysisKey][analysisValue]++;
+        }
       }
     }
     setActiveSolution(solution);
+    setBorderAnalysis(isBorderAnalysis && borderAnalysis);
   };
 
   return (
@@ -128,23 +157,70 @@ const App = () => {
         ))}
       </div>)}
       {activeSolution && (
-        <div className="solution">
+        <div className="solution" ref={el => {
+          if (el) {
+            el.style.zoom = Math.max(0.25, Math.min((window.innerWidth - 20) / 3240, (window.innerHeight - 20) / 3240)).toFixed(3);
+          }
+        }}>
           {
-            activeSolution.map(([pieceNumber, orientation]) => {
-              console.log(pieceNumber, orientation);
-              const piece = pieceNumber !== null ? pieces[pieceNumber - 1] : null;
-              const faces = ['north', 'east', 'south', 'west', 'north', 'east', 'south', 'west'];
-              return (
-                <Piece key={pieceNumber}>
-                  {piece && partFromSpec(piece.north, faces[4 - orientation])}
-                  {piece && partFromSpec(piece.east, faces[5 - orientation])}
-                  {piece && partFromSpec(piece.south, faces[6 - orientation])}
-                  {piece && partFromSpec(piece.west, faces[7 - orientation])}
-                </Piece>
-              )
-            })
+            [...Array(20).keys()].map(row => (
+              <div className="solution-row">
+                {
+                  activeSolution.slice(row * 20, (row + 1) * 20).map(([pieceNumber, orientation], index) => {
+                    const piece = pieceNumber !== null ? pieces[pieceNumber - 1] : null;
+                    const faces = ['north', 'east', 'south', 'west', 'north', 'east', 'south', 'west'];
+                    return (
+                      <Piece key={index}>
+                        {piece && partFromSpec(piece.north, faces[4 - orientation])}
+                        {piece && partFromSpec(piece.east, faces[5 - orientation])}
+                        {piece && partFromSpec(piece.south, faces[6 - orientation])}
+                        {piece && partFromSpec(piece.west, faces[7 - orientation])}
+                      </Piece>
+                    )
+                  })
+                }
+              </div>
+            ))
           }
         </div>
+      )}
+      {borderAnalysis && (
+        <>
+          <hr />
+          <h3>Análise de Borda - Permutações Simples: {totalPermutations(borderAnalysis)} permutações</h3>
+          {Object.keys(borderAnalysis).map(key => {
+            if (Object.keys(borderAnalysis[key]).length === 1) {
+              return null;
+            }
+            const counts = borderAnalysis[key];
+            const totalCount = Object.values(counts).reduce((acc, count) => acc + count, 0);
+            const repeatedCount = Object.values(counts).reduce((acc, count) => count > 1 ? acc + count : acc, 0);
+            const permutations = factorial(totalCount) / factorial(repeatedCount);
+
+            const [eastKind, eastFgColor, eastBgColor, westKind, westFgColor, westBgColor] = key.split('/');
+
+            return (
+              <div style={{ display: 'flex', flexDirection: 'row' }}>
+                <Piece number={`${permutations} permutações`}>
+                  {partFromSpec({ kind: 'Border', fgColor: 'gray', bgColor: 'gray' }, 'north')}
+                  {partFromSpec({ kind: eastKind, fgColor: eastFgColor, bgColor: eastBgColor }, 'east')}
+                  {partFromSpec({ kind: westKind, fgColor: westFgColor, bgColor: westBgColor }, 'west')}
+                </Piece>
+                {Object.entries(counts).map(([value, count]) => {
+                  const [southKind, southFgColor, southBgColor] = value.split('/');
+                  return (
+                    <Piece number={`x${count}`}>
+                      {partFromSpec({ kind: 'Border', fgColor: 'gray', bgColor: 'gray' }, 'north')}
+                      {partFromSpec({ kind: eastKind, fgColor: eastFgColor, bgColor: eastBgColor }, 'east')}
+                      {partFromSpec({ kind: southKind, fgColor: southFgColor, bgColor: southBgColor }, 'south')}
+                      {partFromSpec({ kind: westKind, fgColor: westFgColor, bgColor: westBgColor }, 'west')}
+                    </Piece>
+                  );
+                })}
+              </div>
+            )
+          })}
+        </>
       )}
     </div>
   );
@@ -266,8 +342,7 @@ const Piece = ({ children, number, onRemove }) => {
     return (
       <div className="numbered-piece">
         <div className="number">
-          #{number}
-
+          {typeof number === 'number' ? `#${number}` : number}
           { onRemove ? (
             <>{' '}<a href="javascript:void(0)" style={{ cursor: 'pointer', textDecoration: 'none' }} onClick={onRemove}>🗑</a></>
           ) : null }
@@ -466,4 +541,17 @@ const catalogOutput = (pieces) => {
   return '    var pieces = []Piece{\n' + pieces.map(piece => (
     '        New(' + ['north','east','south','west'].map(face => possibleFaces[`${piece[face].kind}/${piece[face].fgColor}/${piece[face].bgColor}`]).join(', ') + '),'
   )).join('\n') + '\n    }';
+}
+
+function factorial(n) {
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
+}
+
+function totalPermutations(borderAnalysis) {
+  return Object.values(borderAnalysis).reduce((acc, counts) => {
+    const totalCount = Object.values(counts).reduce((acc, count) => acc + count, 0);
+    const repeatedCount = Object.values(counts).reduce((acc, count) => count > 1 ? acc + count : acc, 0);
+    return acc * factorial(totalCount) / factorial(repeatedCount);
+  }, 1);
 }
